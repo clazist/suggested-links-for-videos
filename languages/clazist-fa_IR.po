@@ -1,0 +1,62 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Suggested links for videos\n"
+"POT-Creation-Date: 2021-12-02 13:14+0330\n"
+"PO-Revision-Date: 2021-12-02 13:14+0330\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: suggested-links-for-videos.php\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: suggested-links-for-videos.php:39 suggested-links-for-videos.php:82
+msgid "Title here"
+msgstr "عنوان اینجا"
+
+#: suggested-links-for-videos.php:40 suggested-links-for-videos.php:92
+msgid "Save"
+msgstr "ذخیره"
+
+#: suggested-links-for-videos.php:41
+msgid "Saving..."
+msgstr "درحال ذخیره سازی"
+
+#: suggested-links-for-videos.php:42
+msgid "Error!"
+msgstr "خطا!"
+
+#: suggested-links-for-videos.php:43
+msgid "Saved"
+msgstr "ذخیره شد"
+
+#: suggested-links-for-videos.php:75
+msgid "Add suggested link"
+msgstr "افزودن لینک پینشهادی"
+
+#. Plugin Name of the plugin/theme
+msgid "Suggested links for videos"
+msgstr "لینک های پیشنهادی برای ویدیو"
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://clazist.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Show suggested links above videos"
+msgstr "پیوندهای پیشنهادی در بالای ویدیوها را نشان دهید"
+
+#. Author of the plugin/theme
+msgid "Clazist"
+msgstr "کلازیست"
