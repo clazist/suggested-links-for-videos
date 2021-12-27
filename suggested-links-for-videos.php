@@ -25,6 +25,7 @@ class Suggestedـlinksـforـvideos
     {   
         add_action( 'plugins_loaded', [$this,'load_text_domain']);
         require_once plugin_dir_path(__FILE__).'app/ajax.php';
+        require_once plugin_dir_path(__FILE__).'inc/customizer.php';
         $this->hooks();
     }
 
@@ -50,7 +51,12 @@ class Suggestedـlinksـforـvideos
         wp_enqueue_script('frontend_suggested_links', plugin_dir_url(__FILE__) . 'js/frontend/suggestions.js', ['jquery'], $this->version, true);
         wp_enqueue_style('frontend_suggested_links', plugin_dir_url(__FILE__) . 'css/frontend/suggestions.css', [], $this->version);
         wp_enqueue_style('rtl_suggested_links',plugin_dir_url(__FILE__). 'css/frontend/suggestions.css',[],$this->version);
-        wp_style_add_data( 'rtl_suggested_links', 'rtl', 'replace');
+        wp_localize_script('frontend_suggested_links','suggestions_obj',[
+            'info_image'      =>    get_theme_mod('suggested_links_for_videos_icon') ? '<img src="'.get_theme_mod('suggested_links_for_videos_icon').'" width="24" height="24"/>' : '<?xml version="1.0" <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">    <path d="M 12 2 C 6.4889971 2 2 6.4889971 2 12 C 2 17.511003 6.4889971 22 12 22 C 17.511003 22 22 17.511003 22 12 C 22 6.4889971 17.511003 2 12 2 z M 12 4 C 16.430123 4 20 7.5698774 20 12 C 20 16.430123 16.430123 20 12 20 C 7.5698774 20 4 16.430123 4 12 C 4 7.5698774 7.5698774 4 12 4 z M 11 7 L 11 9 L 13 9 L 13 7 L 11 7 z M 11 11 L 11 17 L 13 17 L 13 11 L 11 11 z"/></svg>',
+            'box_direction'   =>    get_theme_mod('suggested_links_for_videos_direction') ? get_theme_mod('suggested_links_for_videos_direction') : 'left',
+            'text_align'      =>    get_theme_mod('suggested_links_for_videos_text_align') ? get_theme_mod('suggested_links_for_videos_text_align') : 'left',
+            'icon_direction'  =>    get_theme_mod('suggested_links_for_videos_icon_direction') ? get_theme_mod('suggested_links_for_videos_icon_direction') : 'left'
+        ]);
     }
 
     public function hooks()

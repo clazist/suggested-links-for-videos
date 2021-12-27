@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Suggested links for videos\n"
-"POT-Creation-Date: 2021-12-02 13:14+0330\n"
-"PO-Revision-Date: 2021-12-02 13:14+0330\n"
+"POT-Creation-Date: 2021-12-27 11:28+0330\n"
+"PO-Revision-Date: 2021-12-27 11:29+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -20,27 +20,79 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: suggested-links-for-videos.php:39 suggested-links-for-videos.php:82
+#: inc/customizer.php:6
+msgid "Suggested links for videos settings"
+msgstr "تنظیمات پیوندهای پیشنهادی بالای ویدیو"
+
+#: inc/customizer.php:12
+msgid "Icon"
+msgstr "آیکون"
+
+#: inc/customizer.php:15
+msgid "Recommended size 24x24 px"
+msgstr "سایز توصیه شده 24در24 پیکسل"
+
+#: inc/customizer.php:20
+msgid "Suggestions box direction"
+msgstr "جهت لینک های پیشنهادی"
+
+#: inc/customizer.php:25 inc/customizer.php:37 inc/customizer.php:78
+msgid "Left"
+msgstr "چپ"
+
+#: inc/customizer.php:26 inc/customizer.php:38 inc/customizer.php:80
+msgid "Right"
+msgstr "راست"
+
+#: inc/customizer.php:32
+msgid "Suggestions box icon direction"
+msgstr "جهت آیکون پیوندهای پیشنهادی"
+
+#: inc/customizer.php:44
+msgid "Suggestions box background"
+msgstr "رنگ پس زمینه پیوندهای پیشنهادی"
+
+#: inc/customizer.php:51
+msgid "Suggestions box shaodw color"
+msgstr "رنگ سایه جعبه پیوندهای پیشنهادی"
+
+#: inc/customizer.php:58
+msgid "Suggested link color"
+msgstr "رنگ لینک پیشنهادی"
+
+#: inc/customizer.php:65
+msgid "Suggested link font size"
+msgstr "سایز متن لینک پیشنهادی"
+
+#: inc/customizer.php:73
+msgid "Suggested link text align"
+msgstr "جهت متن لینک پیشنهادی"
+
+#: inc/customizer.php:79
+msgid "Center"
+msgstr "وسط"
+
+#: suggested-links-for-videos.php:41 suggested-links-for-videos.php:88
 msgid "Title here"
 msgstr "عنوان اینجا"
 
-#: suggested-links-for-videos.php:40 suggested-links-for-videos.php:92
+#: suggested-links-for-videos.php:42 suggested-links-for-videos.php:98
 msgid "Save"
 msgstr "ذخیره"
 
-#: suggested-links-for-videos.php:41
+#: suggested-links-for-videos.php:43
 msgid "Saving..."
 msgstr "درحال ذخیره سازی"
 
-#: suggested-links-for-videos.php:42
+#: suggested-links-for-videos.php:44
 msgid "Error!"
 msgstr "خطا!"
 
-#: suggested-links-for-videos.php:43
+#: suggested-links-for-videos.php:45
 msgid "Saved"
 msgstr "ذخیره شد"
 
-#: suggested-links-for-videos.php:75
+#: suggested-links-for-videos.php:81
 msgid "Add suggested link"
 msgstr "افزودن لینک پینشهادی"
 
@@ -49,7 +101,6 @@ msgid "Suggested links for videos"
 msgstr "لینک های پیشنهادی برای ویدیو"
 
 #. Plugin URI of the plugin/theme
-#. Author URI of the plugin/theme
 msgid "https://clazist.com"
 msgstr ""
 
@@ -60,3 +111,7 @@ msgstr "پیوندهای پیشنهادی در بالای ویدیوها را ن
 #. Author of the plugin/theme
 msgid "Clazist"
 msgstr "کلازیست"
+
+#. Author URI of the plugin/theme
+msgid "https://github.com/clazist"
+msgstr ""

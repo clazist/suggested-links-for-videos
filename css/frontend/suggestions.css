@@ -7,8 +7,29 @@
 .suggested-links-box{
     position: absolute;
     top: 8px;
-    left: 13px;
     z-index: 2;
+}
+.suggested-links-box-left{
+    left: 13px;
+}
+.suggested-links-box-right{
+    right: 13px;
+}
+body.rtl .suggested-links-icon-left span{
+    display: flex !important;
+    justify-content: end;
+}
+body.rtl .suggested-links-icon-right span{
+    display: flex !important;
+    justify-content: start;
+}
+body:not(.rtl) .suggested-links-icon-right span{
+    display: flex !important;
+    justify-content: start;
+}
+body:not(.rtl) .suggested-links-icon-right span{
+    display: flex !important;
+    justify-content: end;
 }
 .suggested-links-box:not(.suggestion-click-active) .suggestion-item{
     background-color: #4a4949b8;
@@ -19,6 +40,15 @@
     display: none;
     padding: 3px 10px;
     border-radius: 1px;
+}
+.suggestion-item-align-left{
+    text-align: left;
+}
+.suggestion-item-align-center{
+    text-align: center;
+}
+.suggestion-item-align-right{
+    text-align: right;
 }
 .suggestion-item-active{
     opacity: 1;

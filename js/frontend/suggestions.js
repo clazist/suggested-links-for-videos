@@ -26,8 +26,8 @@ jQuery(document).ready(function ($) {
 
         function rednerHTMLelement() {
             $(`
-            <div class="suggested-links-box">
-            <span><?xml version="1.0"?><svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">    <path d="M 12 2 C 6.4889971 2 2 6.4889971 2 12 C 2 17.511003 6.4889971 22 12 22 C 17.511003 22 22 17.511003 22 12 C 22 6.4889971 17.511003 2 12 2 z M 12 4 C 16.430123 4 20 7.5698774 20 12 C 20 16.430123 16.430123 20 12 20 C 7.5698774 20 4 16.430123 4 12 C 4 7.5698774 7.5698774 4 12 4 z M 11 7 L 11 9 L 13 9 L 13 7 L 11 7 z M 11 11 L 11 17 L 13 17 L 13 11 L 11 11 z"/></svg></span>
+            <div class="suggested-links-box suggested-links-box-${suggestions_obj.box_direction} suggested-links-icon-${suggestions_obj.icon_direction}">
+            <span>${suggestions_obj.info_image}</span>
             </div>
             `).appendTo(this_video_parent)
             this_video_suggested_links_box = $(this_video_parent).find('.suggested-links-box')
@@ -37,7 +37,7 @@ jQuery(document).ready(function ($) {
                     if (suggestion[1].video_link == $(this_video).attr('src')) {
 
                         $(`
-                <div class="suggestion-item" data-time="${suggestion[1].time}">
+                <div class="suggestion-item suggestion-item-align-${suggestions_obj.text_align}" data-time="${suggestion[1].time}">
                     <a href="${suggestion[1].url}">${suggestion[1].title}</a>
                 </div>
             `).appendTo($(this_video_suggested_links_box))
