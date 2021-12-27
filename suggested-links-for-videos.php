@@ -4,7 +4,7 @@
  * Plugin Name:       Suggested links for videos
  * Plugin URI:        https://clazist.com
  * Description:       Show suggested links above videos
- * Version:           1.0
+ * Version:           1.1
  * Author:            Clazist
  * Author URI:        https://github.com/clazist
  * Text Domain:       clazist
