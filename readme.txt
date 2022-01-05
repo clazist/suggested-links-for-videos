@@ -10,3 +10,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
  
 With this plugin you can show suggestion link above the videos
+
+== Description ==
+Suggested Links for Videos plugin is the first plugin for WordPress for showing the suggested links above the videos like Youtube.
+This plugin is easy to use and just install it and enjoy it with professional settings.
