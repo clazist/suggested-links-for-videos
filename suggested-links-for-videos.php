@@ -126,9 +126,17 @@ class Suggestedـlinksـforـvideos
     {
         if (is_single()) {
             $codes = $this->handleFrontend();
-            $content .= '<script>var suggested_links_obj = ' . $codes . '</script>';
+            $content .= ''.$this->render_customizer_css().'<script>var suggested_links_obj = ' . $codes . '</script>';
         }
         return $content;
+    }
+
+    public function render_customizer_css()
+    {
+        ob_start();
+        include_once plugin_dir_path(__FILE__).'inc/style.php';
+        $styles = ob_get_clean();
+        return $styles;
     }
 
     public function load_text_domain() {
